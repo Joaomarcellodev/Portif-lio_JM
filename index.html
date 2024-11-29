@@ -21,9 +21,9 @@
       <nav aria-label="main_menu">
         <ul>
           <li ><a href="#">Inicio</a></li>
-          <li ><a href="#">Sobre</a></li>
-          <li ><a href="#">Projetos</a></li>
-          <li ><a href="#">Contatos</a></li>
+          <li ><a href="#second-main">Sobre</a></li>
+          <li ><a href="#third-main">Projetos</a></li>
+          <li ><a href="#footer">Contatos</a></li>
         </ul>
       </nav>
     </header>
@@ -33,26 +33,26 @@
     <main>
       <!-- First main -->
       <section class="first-main">
-        <div id="first-circle"></div>
-        <div id="second-circle"></div>
-
-        <div id="photo_first_main">
-          <h1>Eu sou desenvolvedor FullStack João Marcello</h1>
-          <p>Fala galera, JM na área! tudo beleza?</p>
+        <div id="content">
+          <h1>Fala galera, JM na área!! Tudo beleza?</h1>
+          <p>Foco no progresso que o resto é sucesso !!</p>
+        </div>
+        <div id="photo">
           <img
-          src="/images/photo_jm_01_.jpeg"
-          alt="João Marcello em um ambiente de trabalho, desenvolvedor FullStack"
-        />
+            src="/images/photo_jm_01_.jpeg"
+            alt="João Marcello em um ambiente de trabalho, desenvolvedor FullStack"
+          />
         </div>
       </section>
+      
 
       <!-- Second main -->
-      <section id="second-main">
-        <div>
-          <img src="/images/photo_jm_02.jpeg" alt="João Marcello" />
-        </div>
 
-        <div>
+      <section id="second-main">
+        <div id="photo-second-main">
+          <img src="/images/WhatsApp Image 2024-11-29 at 12.43.22.jpeg" alt="João Marcello" />
+        </div>
+        <div id="content-second-main">
           <h2>Desenvolvedor FullStack</h2>
           <p>
             Fala galera, JM na área! Apaixonado por tecnologia e sempre em busca
@@ -69,63 +69,69 @@
           </p>
         </div>
       </section>
+      
+     <!-- Third Section: Projetos -->
+    <section id="third-main">
+      <div class="section-third-main">
+        <h2>Meus Projetos</h2>
+        <p>Aqui estão alguns dos meus projetos onde utilizei minhas tecnologias cotidianas.</p>
+      </div>
 
-      <!-- Third main -->
-      <section>
-        <div>
-          <h2>Meus Projetos</h2>
-          <p>
-            Aqui estão um pouco dos meus projetos onde utilizei as minhas
-            tecnologias cotidianas
-          </p>
+      <div class="project-cards">
+        <div class="card">
+          <div class="icon"><i class="bx bxl-html5" aria-label="HTML5"></i></div>
+          <h3>Phone Store - Loja de Celulares</h3>
+          <p>Meu primeiro site quando comecei a programar. Simples, responsivo, mas de grande qualidade. Utilizado: HTML, CSS e JavaScript.</p>
+          <a href="https://joaomarcellodev.github.io/Phone-Store/" target="_blank">Ver Projeto</a>
         </div>
-
-        <div>
-          <div>
-            <div>
-              <i class="bx bxl-html5" aria-label="HTML5"></i>
-            </div>
-            <p>Projeto tal</p>
-            <a href="#">Ver Projeto de Desenvolvimento Front-End</a>
-          </div>
-
-          <div>
-            <div>
-              <i class="bx bxl-html5" aria-label="HTML5"></i>
-            </div>
-            <p>Projeto tal</p>
-            <a href="#">Ver Projeto de Desenvolvimento Web</a>
-          </div>
-
-          <div>
-            <div>
-              <i class="bx bxl-html5" aria-label="HTML5"></i>
-            </div>
-            <p>Projeto tal</p>
-            <a href="#">Ver Projeto de Integração de APIs</a>
-          </div>
+        <div class="card">
+          <div class="icon"><i class="bx bxl-html5" aria-label="HTML5"></i></div>
+          <h3>Acessibilidade de Texto</h3>
+          <p>Projeto com um assistente chamado Galeno que fala o que você digita, usando as vozes disponíveis no navegador.</p>
+          <a href="https://joaomarcellodev.github.io/Acessibilidade_Texto/" target="_blank">Ver Projeto</a>
         </div>
-      </section>
+        <div class="card">
+          <div class="icon"><i class="bx bxl-react" aria-label="React"></i></div>
+          <h3>Desafio Kimipet</h3>
+          <p>Desafio proposto como teste de estágio. Utilizado: Next.js. (Não responsivo).</p>
+          <a href="https://github.com/Joaomarcellodev/Desafio-kimipet" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="bx bxl-java"></i></div>
+          <h3>Projeto Java - Questões Monitor</h3>
+          <p>Questões de Java quando estava fazendo monitoria com o pessoal da programe.io.</p>
+          <a href="https://github.com/Joaomarcellodev/Java_Monitoria" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="bx bxl-html5" aria-label="HTML5"></i></div>
+          <h3>Projeto Calculadora - Front end </h3>
+          <p>Projeto calculadora feito em html,css e javascipt</p>
+          <a href=" https://joaomarcellodev.github.io/Calculadora_Completa/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="bx bxl-html5" aria-label="HTML5"></i></div>
+          <h3>Projeto Faculdade Unes- Front end </h3>
+          <p>Projeto feito com apenas html como fase aprendizado</p>
+          <a href="https://joaomarcellodev.github.io/Faculdade_Unes/" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
+    </section>
+    
     </main>
 
     <!-- Footer - Contact-->
 
-    <footer>
-
-      <section id="footer">
-        <h2>Entre em contato comigo, acesse meu:</h2>
-
-        <ul>
-          <li><a href="#"><i class='bx bxl-github'></i></a></li>
-          <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
-          <li><a href="#"><i class='bx bxl-whatsapp' ></i></a></li>
-          <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
-        </ul>
-
-        <p>2024 - Todos os direitos reservados </p>
-
-      </section>
-
-    </footer>
+  <footer>
+    <section id="footer">
+      <h2>Entre em contato comigo, acesse meu:</h2>
+      <ul>
+        <li><a target="_blank" href="https://github.com/Joaomarcellodev"><i class='bx bxl-github'></i></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/joaomarcellodev/"><i class='bx bxl-linkedin'></i></a></li>
+        <li><a target="_blank" href="https://wa.me/86988109565?text=Meu%20WhatsApp%20"><i class='bx bxl-whatsapp'></i></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/joaomarcello.dev?igsh=MW9weWpzNXA2bnQydA%3D%3D&utm_source=qr"><i class='bx bxl-instagram'></i></a></li>
+      </ul>
+      <p>2024 - Todos os direitos reservados</p>
+    </section>
+  </footer>
   </body>
 </html>
