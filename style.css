@@ -121,8 +121,18 @@ header nav ul li a:hover {
     }
 }
 
+@media (max-width: 480px) {
+  header nav ul {
+      display: none; /* Oculta a lista de navegação */
+  }
+}
 
-
+@media (max-width: 768px) {
+  #soon_JM {
+      height: 100px; /* Aumentar o tamanho da imagem */
+      padding: 5px;
+  }
+}
 
 /* main   */
 
