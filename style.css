@@ -65,32 +65,66 @@ header nav ul li a:hover {
     padding: 5px;
 }
 
-
 @media (max-width: 768px) {
     header {
-        flex-wrap: wrap;
-        padding: 15px 20px;
+        flex-direction: column; 
+        padding: 10px 15px;
+        height: auto; 
     }
 
     #soon_JM {
-        height: 60px;
+        height: 50px; 
+    }
+
+    header nav {
+        margin: 10px auto 0; 
     }
 
     header nav ul {
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
         justify-content: center;
-        margin-top: 10px;
+        gap: 25px; 
     }
 
     header nav ul li {
-        margin: 10px;
+        margin: 0; 
     }
 
     header nav ul li a {
-        padding: 10px 15px;
-        font-size: 0.9rem;
+        padding: 10px 15px; 
+        font-size: 1rem; 
+        border-radius: 15px; 
     }
 }
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    #soon_JM {
+        height: 40px; 
+    }
+
+    header nav ul {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    header nav ul li {
+        margin: 0; 
+    }
+
+    header nav ul li a {
+        padding: 8px 12px;
+        font-size: 0.9rem; 
+    }
+}
+
+
+
+
+/* main   */
 
 
 main {
@@ -255,6 +289,8 @@ main {
 }
 
 
+/* third-main  */
+
 
 #third-main {
     padding: 8rem;
@@ -333,7 +369,90 @@ main {
   .card a:hover {
     background-color: #181896;
   }
+  /* Para telas menores que 768px (tablet e celular) */
+@media (max-width: 768px) {
+    #third-main {
+      padding: 4rem;
+    }
   
+    .section-third-main h2 {
+      font-size: 1.8rem;
+    }
+  
+    .section-third-main p {
+      font-size: 0.9rem;
+    }
+  
+    .project-cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para colunas menores */
+      gap: 15px;
+    }
+  
+    .card {
+      padding: 15px;
+      min-height: 250px;
+    }
+  
+    .card .icon {
+      font-size: 2.5rem; /* Ícone menor */
+    }
+  
+    .card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  
+    .card a {
+      padding: 8px 16px; /* Botão menor */
+    }
+  }
+  
+  /* Para telas menores que 480px (celulares pequenos) */
+  @media (max-width: 480px) {
+    #third-main {
+      padding: 2rem;
+    }
+  
+    .section-third-main h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section-third-main p {
+      font-size: 0.8rem;
+    }
+  
+    .project-cards {
+      grid-template-columns: 1fr; /* Uma coluna */
+    }
+  
+    .card {
+      padding: 10px;
+      min-height: auto; /* Remove altura mínima fixa */
+    }
+  
+    .card .icon {
+      font-size: 2rem;
+    }
+  
+    .card h3 {
+      font-size: 1rem;
+    }
+  
+    .card p {
+      font-size: 0.8rem;
+    }
+  
+    .card a {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+
+
+  /*  footer   */
 
   
 footer {
