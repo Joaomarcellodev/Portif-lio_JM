@@ -16,6 +16,9 @@
   --text-color: #f0f0f0;
 }
 
+
+/* body */
+
 body{
   background-color: var(--bg-dark);
   padding: 2rem;
@@ -24,6 +27,7 @@ body{
 
 
 /* header */
+
 header {
     display: flex;
     align-items: center;
@@ -38,30 +42,11 @@ header {
     z-index: 1000;
 }
 
-
-main {
-    padding-top: 120px;
-}
-
-header nav {
-    margin-left: auto;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header nav ul li {
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    background-color: var(--secondary-color);
-    padding: 10px 15px;
-    border-radius: 20px;
+header nav a {
+    background-image: var(--primary-gradient);
+    padding: 0.6rem 1.4rem;
+    border-radius: 2rem;
+    margin-right: 2rem;
     text-decoration: none;
     color: var(--text-color);
     font-size: 1rem;
@@ -69,90 +54,22 @@ header nav ul li a {
     transition: color 0.5s ease;
 }
 
-header nav ul li a:hover {
+header a:hover {
   opacity: 0.70;
   
-}
-
-
-#soon_JM {
-    height: 12rem;
-    padding: 2rem;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; 
-        padding: 10px 15px;
-        height: auto; 
-    }
-
-    #soon_JM {
-        height: 50px; 
-    }
-
-    header nav {
-        margin: 10px auto 0; 
-    }
-
-    header nav ul {
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 25px; 
-    }
-
-    header nav ul li {
-        margin: 0; 
-    }
-
-    header nav ul li a {
-        padding: 10px 15px; 
-        font-size: 1rem; 
-        border-radius: 15px; 
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 5px 10px;
-    }
-
-    #soon_JM {
-        height: 40px; 
-    }
-
-    header nav ul {
-        flex-direction: column; 
-        gap: 20px; 
-    }
-
-    header nav ul li {
-        margin: 0; 
-    }
-
-    header nav ul li a {
-        padding: 8px 12px;
-        font-size: 0.9rem; 
-    }
-}
-
-@media (max-width: 480px) {
-  header nav ul {
-      display: none; /* Oculta a lista de navegação */
-  }
-}
-
-@media (max-width: 768px) {
-  #soon_JM {
-      height: 100px; /* Aumentar o tamanho da imagem */
-      padding: 5px;
-  }
 }
 
 /* main   */
 
 
+main {
+  padding-top: 120px;
+}
 
+#soon_JM {
+  height: 12rem;
+  padding: 2rem;
+}
 
 .first-main {
     display: flex;
