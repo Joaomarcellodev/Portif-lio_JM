@@ -3,18 +3,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+/* var - colors */
+
+:root {
+  --primary-gradient: linear-gradient(90deg, #00cba9, #0073e6); 
+  --primary-color: #00cba9; 
+  --secondary-color: #0073e6; 
+  --bg-dark: #121212;
+  --text-color: #f0f0f0;
 }
+
+body{
+  background-color: var(--bg-dark);
+  padding: 2rem;
+  color: var(--text-color);
+}
+
 
 /* header */
 header {
-    background-color: rgb(63, 54, 54);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
-    height: 100px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    height: 8rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     position: fixed; 
     top: 0;
     left: 0;
@@ -43,26 +59,25 @@ header nav ul li {
 }
 
 header nav ul li a {
-    background-color: rgb(29, 29, 190);
+    background-color: var(--secondary-color);
     padding: 10px 15px;
     border-radius: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 header nav ul li a:hover {
-    background-color: rgb(24, 24, 150);
-    color: rgb(190, 190, 190);
-    transform: scale(1.05);
+  opacity: 0.70;
+  
 }
 
 
 #soon_JM {
-    height: 100px;
-    padding: 5px;
+    height: 12rem;
+    padding: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -137,10 +152,6 @@ header nav ul li a:hover {
 /* main   */
 
 
-main {
-    padding: 20px;
-    background-color: #423c3c;
-}
 
 
 .first-main {
@@ -304,7 +315,7 @@ main {
 
 #third-main {
     padding: 8rem;
-    background-color: #3f3636;
+    background-color: var(--bg-dark);
     text-align: center;
   }
   
@@ -466,39 +477,38 @@ main {
 
   
 footer {
-    background-color: #2f2a2a;
-    padding: 7rem;
+    background-color: var(--bg-dark);
+    padding: 2rem;
     text-align: center;
-    color: white;
+    color: var(--text-color);
   }
   
   footer h2 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
   
   footer ul {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 1rem;
     list-style: none;
-    margin-bottom: 20px;
   }
   
   footer ul li a {
     font-size: 2rem;
-    color: white;
+    color: var(--text-color);
     transition: color 0.3s;
   }
   
   footer ul li a:hover {
-    color: #1d1dbe;
+    color: var(--secondary-color);
   }
   
   footer p {
     font-size: 0.9rem;
-    margin-top: 10px;
-    color: #c2c2c2;
+    margin-top: 1rem;
+    color: var(--text-color);
   }
   
   /* Responsiveness */
