@@ -8,7 +8,7 @@
 
 /* var - colors */
 
-:root {
+:root{
   --primary-gradient: linear-gradient(90deg, #00cba9, #0073e6); 
   --primary-color: #00cba9; 
   --secondary-color: #0073e6; 
@@ -219,7 +219,7 @@ main{
 #content-second-main p {
     text-align: justify;
     font-size: 1.2rem;
-    color: white;
+    color: var(--text-color);
     line-height: 1.5;
 }
 
@@ -228,43 +228,55 @@ main{
 
 
 #third-main {
-    padding: 8rem;
-    background-color: var(--bg-dark);
-    text-align: center;
-    margin-top: 8rem;
+  margin-right: 12rem;
+  margin-left: 12rem;
+  padding: 4rem;
+  background-color: var(--bg-dark);
+  text-align: center;
+  margin-top: 14rem;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   }
   
   .section-third-main h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
   }
   
-  .section-third-main p {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    color: white;
+  .section-third-main h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    color: var(--text-color);
   }
 
 .project-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 5rem;
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
+.card img{
+  width: 20rem;
+  height: 8rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
   .card {
     background-color: #2f2a2a;
     display: flex;
+    width: 20rem;
+    height: 22rem;
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 0.4rem;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    min-height: 300px; 
   }
   
   .card:hover {
@@ -396,6 +408,7 @@ footer {
     padding: 2rem;
     text-align: center;
     color: var(--text-color);
+    margin-top: 10rem;
   }
   
   footer h2 {
