@@ -72,7 +72,6 @@ main{
 
 /*  First Main */
 
-
 .first-main {
     display: flex;
     justify-content: space-between;
@@ -126,12 +125,41 @@ main{
    height: 24rem;
    object-fit: cover;
    border-radius: 50%;
+   transition: transform 0.6s ease, opacity 0.6s ease;
+   box-shadow:  0px 8px 15px rgba(0,0,0,10);
 }
 
 
-/*  Skills */
+/*  Tech */
 
 
+#tech{
+  margin-top: 5rem;
+  background-color:  #1e1e1e;
+  border: 1px solid #333;
+  width:auto;
+  height: 10rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+#icons{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  gap: 1rem;
+}
+
+#icons svg{
+  transition: transform 0.8s ease;
+}
+
+#icons svg:hover {
+  transform: scale(1.20);
+}
 
 
 /* Second main */
@@ -143,7 +171,7 @@ main{
     gap: 6rem;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 20rem;
+    margin-top: 5rem;
 }
 
 #photo-second-main {
@@ -158,6 +186,7 @@ main{
     height: 24rem;
     object-fit: cover;
     border-radius: 50%; 
+    box-shadow:  0px 8px 15px rgba(0,0,0,10);
 }
 
 #content-second-main {
