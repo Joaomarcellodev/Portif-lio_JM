@@ -88,14 +88,14 @@ main{
 }
 
 #content h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin-bottom: 1.2rem;
     color: var(--text-color);
     font-weight: bold;
 }
 
 #content p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--text-color);
     font-weight: bold;
     margin-bottom: 1.4rem;
@@ -207,7 +207,7 @@ main{
 
 #content-second-main h2 {
     font-size: 2rem;
-    color: white;
+    color: var(--text-color);
     margin-bottom: 1rem;
 }
 
@@ -228,95 +228,143 @@ main{
 
 
 #third-main {
-  margin-right: 12rem;
-  margin-left: 12rem;
-  padding: 4rem;
+  margin: 14rem auto 0;
+  padding: 4rem 2rem;
+  max-width: 1400px;
   background-color: var(--bg-dark);
   text-align: center;
-  margin-top: 14rem;
-  background-color: #1e1e1e;
+  background-color: #141414;
   border: 1px solid #333;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  }
-  
-  .section-third-main h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-  }
-  
-  .section-third-main h3 {
-    font-size: 1.2rem;
-    margin-bottom: 4rem;
-    color: var(--text-color);
-  }
-
-.project-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-.card img{
-  width: 20rem;
-  height: 8rem;
-  border-radius: 0.4rem 0.4rem 0 0;
 }
 
-  .card {
-    background-color: #2f2a2a;
-    display: flex;
-    width: 20rem;
-    height: 22rem;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: center;
-    border-radius: 0.4rem;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+.section-third-main h2 {
+  font-size: clamp(1.8rem, 5vw, 2.2rem);
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.section-third-main h3 {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin-bottom: 4rem;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 3rem;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #1e1e1e;
+  width: 26rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2e2e2e;
+  overflow: hidden;
+}
+
+.card:hover, .card:focus-within {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: var(--primary-color);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.card img {
+  width: 26rem;
+  height: 20rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 1rem 0.8rem;
+  color: var(--text-color);
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 0 1.5rem;
+  color: var(--text-color);
+  text-align: center; 
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.icons-card {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  font-size: 4rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.4rem 4rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--primary-gradient);
+}
+
+.button.secondary {
+  background: #2e2e2e;
+  border: 1px solid #444;
+  font-size: 2rem;
+}
+
+.button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  #third-main {
+    margin: 8rem 1rem 0;
+    padding: 2rem 1rem;
   }
   
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  .project-cards {
+    gap: 2rem;
   }
-  
-  .card .icon {
-    font-size: 3rem;
-    color: #1d1dbe;
-    margin-bottom: 15px;
-  }
-  
-  .card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    color: white;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: white;
-    flex: 1; 
-    text-align: justify; 
-  }
-  
-  .card a {
-    text-decoration: none;
-    color: white;
-    background-color: #1d1dbe;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    align-self: flex-end; 
-  }
-  
-  .card a:hover {
-    background-color: #181896;
-  }
+}
+
   /* Para telas menores que 768px (tablet e celular) */
 @media (max-width: 768px) {
     #third-main {
