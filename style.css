@@ -25,50 +25,61 @@ body{
   color: var(--text-color);
 }
 
+/* Versão desktop */
+
 
 /* header */
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    height: 8rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    position: fixed; 
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 8rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
-header nav a {
-    background-image: var(--primary-gradient);
-    padding: 0.6rem 1.4rem;
-    border-radius: 2rem;
-    margin-right: 2rem;
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: bold;
-    transition: opacity 0.5s ease-in-out;
+header nav a{
+  background-image: var(--primary-gradient);
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out;
 }
 
-header a:hover {
-  opacity: 0.70;
+header a:hover{
+opacity: 0.70;
+}
+
+.menu-button{
+display: none;
+font-size: 2rem;
+background: none;
+border: none;
+color: #333;
+cursor: pointer;
 }
 
 #soon_JM {
-  height: 12rem;
-  padding: 2rem;
+height: 12rem;
+padding: 2rem;
 }
+
 
 /* main   */
 
 main{
   padding-top: 4rem;
 }
-
 
 /*  First Main */
 
@@ -692,32 +703,106 @@ main{
   }
   
 
-  
+    /* Versão Mobile  */
 
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .first-main {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    #second-main {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    header nav ul {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  
+    @media(max-width: 768px){
 
+      .header{
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .menu-button{
+        display: block;
+      }
+      
+      header nav .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        text-align: center;
+        top: 6rem;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-dark);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      }
+      
+      header nav .menu.active {
+        display: flex;
+      }
+      
+      header nav a {
+        margin: 1rem;
+        width: 50%;
+      }
+      
+      #soon_JM {
+        height: 8rem;
+        padding: 1rem;
+      }
+      
+      header {
+        height: 6rem;
+        padding: 1rem;
+      }
+
+       .first-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 4rem;
+      }
+
+      #content h1{
+        text-align: center;
+        font-size: 2rem;
+        white-space: nowrap;
+      }
+
+      #content p{
+        text-align: center;
+        font-size: 1.6rem;
+      }
+
+      .social{
+        display: flex;
+        justify-content: center;
+      }
+
+      .social i{
+        font-size:2.5rem;
+      }
+
+      #photo img {
+        margin-top: 2rem;
+        width: 20rem;
+        height: 20rem;
+     }
+
+     
+
+   
+
+    
+      #second-main {
+        flex-direction: column;
+      }
+
+
+    }
+
+
+
+
+
+
+     
+    
+      
 
 
   

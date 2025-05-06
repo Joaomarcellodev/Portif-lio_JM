@@ -18,16 +18,18 @@
   <body>
     <!--header-->
 
-    <header>
+    <header class="header">
       <div>
         <img id="soon_JM" src="./images/logo_jm.png" alt="soon_JM" />
       </div>
-
       <nav>
-        <a href="#">Inicio</a>
-        <a href="#second-main">Sobre</a>
-        <a href="#third-main">Projetos</a>
-        <a href="#third-main">Experiências</a>
+        <button class="menu-button" aria-label="Toggle menu">&#9776;</button>
+        <div class="menu">
+          <a href="#">Inicio</a>
+          <a href="#second-main">Sobre</a>
+          <a href="#third-main">Projetos</a>
+          <a href="#experiences">Experiências</a>
+        </div>
       </nav>
     </header>
 
@@ -976,9 +978,9 @@
         <div class="footer-links">
           <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#second-main">Sobre</a></li> 
+            <li><a href="#second-main">Sobre</a></li>
             <li><a href="#projects-heading">Projetos</a></li>
-            <li><a href="#third-main">Experiências</a></li>            
+            <li><a href="#third-main">Experiências</a></li>
           </ul>
         </div>
 
@@ -1005,23 +1007,6 @@
       </div>
     </footer>
 
-    <script>
-      const photo = document.getElementById("photo").querySelector("img");
-      let toggled = false;
-
-      photo.addEventListener("click", () => {
-        photo.style.transform = "rotateY(180deg)";
-        photo.style.opacity = "0";
-
-        setTimeout(() => {
-          photo.src = toggled
-            ? "./images/photo_jm.jpeg"
-            : "./images/logo_jm.png";
-          photo.style.transform = "rotateY(0deg)";
-          photo.style.opacity = "1";
-          toggled = !toggled;
-        }, 600);
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
