@@ -31,26 +31,33 @@ function startCarousel() {
   const iconsContainer = document.querySelector('#icons');
   const totalIcons = iconsContainer.children.length;
   const iconWidth = 68; // 60px (width) + 8px (gap)
-  const containerWidth = iconWidth * totalIcons; // Largura dinâmica baseada no número de ícones
+  const containerWidth = iconWidth * totalIcons; // Largura inicial baseada no número de ícones
 
-  // Clona os ícones para criar a ilusão de infinito
-  const clonedIcons = Array.from(iconsContainer.children).map(icon => icon.cloneNode(true));
-  clonedIcons.forEach(icon => iconsContainer.appendChild(icon));
+  // Clona os ícones várias vezes para garantir um efeito infinito suave
+  const clonesNeeded = Math.ceil(window.innerWidth / containerWidth) + 1; // Garante que haja ícones suficientes para cobrir a tela
+  for (let i = 0; i < clonesNeeded; i++) {
+    const clonedIcons = Array.from(iconsContainer.children).slice(0, totalIcons).map(icon => icon.cloneNode(true));
+    clonedIcons.forEach(icon => iconsContainer.appendChild(icon));
+  }
+
+  // Recalcula a largura total do contêiner após adicionar os clones
+  const updatedTotalIcons = iconsContainer.children.length;
+  const totalWidth = iconWidth * updatedTotalIcons;
+  iconsContainer.style.width = `${totalWidth}px`;
 
   let scrollPosition = 0;
-  const maxScroll = iconWidth * totalIcons;
+  const maxScroll = containerWidth; // O ponto de reinício é a largura do conjunto original de ícones
 
   function animateCarousel() {
-    scrollPosition += 0.8; // Velocidade de rolagem (ajuste para mais lento/rápido)
+    scrollPosition += 0.9; // Velocidade de rolagem (ajuste para mais lento/rápido)
     if (scrollPosition >= maxScroll) {
-      scrollPosition = 0; // Reinicia suavemente
+      scrollPosition -= maxScroll; // Reduz a posição para simular continuidade
     }
     iconsContainer.style.transform = `translateX(-${scrollPosition}px)`;
     requestAnimationFrame(animateCarousel);
   }
 
-  // Define a largura do contêiner e centraliza o carrossel
-  iconsContainer.style.width = `${containerWidth}px`;
+  // Define a largura inicial do contêiner e centraliza o carrossel
   iconsContainer.style.transform = `translateX(-50%)`;
 
   // Inicia a animação
@@ -68,7 +75,6 @@ window.addEventListener('resize', () => {
     startCarousel();
   }
 });
-
 
 
 
