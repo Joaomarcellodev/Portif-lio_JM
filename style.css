@@ -370,9 +370,9 @@ main{
 /* Experiences*/
 
 #experiences {
-  margin: 10rem auto 0; /* Ajustei a margem */
+  margin: 10rem auto 0;
   padding: 4rem 2rem;
-  max-width: 1200px; /* Reduzi um pouco a largura */
+  max-width: 1200px;
   background-color: var(--bg-dark);
   text-align: center;
   background-color: #141414;
@@ -389,7 +389,7 @@ main{
 
 .section-experiences h3 {
   font-size: clamp(1rem, 3vw, 1.2rem);
-  margin-bottom: 3rem; /* Reduzi a margem */
+  margin-bottom: 3rem;
   color: var(--text-color);
   opacity: 0.9;
 }
@@ -444,6 +444,9 @@ main{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border: 1px solid #2e2e2e;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .timeline-item:hover .timeline-content {
@@ -472,16 +475,15 @@ main{
 }
 
 .timeline-content .details {
-  display: none; 
+  display: none;
   margin-top: 2rem;
   color: var(--text-color);
   text-align: left;
 }
 
-.details p{
+.details p {
   margin-top: 0.8rem;
   line-height: 1.5rem;
-
 }
 
 .timeline-item:hover .timeline-content .details {
@@ -492,11 +494,13 @@ main{
   justify-content: center;
   margin-bottom: 1rem;
   gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .timeline-content .button {
   display: inline-block;
-  padding: 0.4rem 1.5rem; 
+  padding: 0.4rem 1.5rem;
 }
 
 .image-container {
@@ -510,121 +514,6 @@ main{
   display: block;
   border-radius: 1rem;
 }
-
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-  .timeline::before {
-    left: 2rem;
-  }
-
-  .timeline-item:nth-child(odd) {
-    padding-right: 1rem;
-    padding-left: 4rem;
-    text-align: left;
-  }
-
-  .timeline-item:nth-child(even) {
-    padding-left: 4rem;
-  }
-
-  .timeline-circle {
-    left: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #third-main {
-    margin: 8rem 1rem 0;
-    padding: 2rem 1rem;
-  }
-  
-  .project-cards {
-    gap: 2rem;
-  }
-}
-
-  /* Para telas menores que 768px (tablet e celular) */
-@media (max-width: 768px) {
-    #third-main {
-      padding: 4rem;
-    }
-  
-    .section-third-main h2 {
-      font-size: 1.8rem;
-    }
-  
-    .section-third-main p {
-      font-size: 0.9rem;
-    }
-  
-    .project-cards {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para colunas menores */
-      gap: 15px;
-    }
-  
-    .card {
-      padding: 15px;
-      min-height: 250px;
-    }
-  
-    .card .icon {
-      font-size: 2.5rem; /* Ícone menor */
-    }
-  
-    .card h3 {
-      font-size: 1.2rem;
-    }
-  
-    .card p {
-      font-size: 0.9rem;
-    }
-  
-    .card a {
-      padding: 8px 16px; /* Botão menor */
-    }
-  }
-  
-  /* Para telas menores que 480px (celulares pequenos) */
-  @media (max-width: 480px) {
-    #third-main {
-      padding: 2rem;
-    }
-  
-    .section-third-main h2 {
-      font-size: 1.5rem;
-    }
-  
-    .section-third-main p {
-      font-size: 0.8rem;
-    }
-  
-    .project-cards {
-      grid-template-columns: 1fr; /* Uma coluna */
-    }
-  
-    .card {
-      padding: 10px;
-      min-height: auto; /* Remove altura mínima fixa */
-    }
-  
-    .card .icon {
-      font-size: 2rem;
-    }
-  
-    .card h3 {
-      font-size: 1rem;
-    }
-  
-    .card p {
-      font-size: 0.8rem;
-    }
-  
-    .card a {
-      padding: 6px 12px;
-      font-size: 0.8rem;
-    }
-  }
-
 
   /*  footer   */
 
@@ -894,7 +783,6 @@ main{
     
       .card p {
         font-size: 0.9rem;
-        text-align: justify;
       }
     
       .icons-card {
@@ -916,7 +804,106 @@ main{
         
       }
 
-    }
+      /* Experiences   */
+     
+      #experiences {
+        margin: 6rem auto 0;
+        padding: 2rem 1rem;
+      }
+    
+      .section-experiences h2 {
+        margin-top: 1rem;
+      }
+    
+      .section-experiences h3 {
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        margin-bottom: 2rem;
+      }
+    
+      .timeline::before {
+        left: 1rem;
+        transform: none;
+      }
+    
+      .timeline-item {
+        margin-bottom: 2.5rem;
+        width: 100%;
+        padding: 0;
+        text-align: left;
+      }
+    
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+        padding-left: 2.5rem;
+        text-align: left;
+      }
+    
+      .timeline-circle {
+        left: 0.5rem;
+        transform: none;
+      }
+    
+      .timeline-content {
+        padding: 1rem;
+        min-height: 26rem; /* Aumentado para acomodar mais conteúdo */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+    
+      .timeline-content h3 {
+        font-size: 1.1rem;
+        margin-top: 0.8rem;
+      }
+    
+      .timeline-content .period {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+      }
+    
+      .timeline-content .description {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        flex-grow: 1;
+      }
+    
+      .timeline-content .details {
+        margin-top: 1rem;
+      }
+    
+      .details p {
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+      }
+    
+      .timeline-content .icons-card {
+        font-size: 1.8rem;
+        gap: 0.4rem;
+        max-width: 100%;
+        justify-content: center;
+      }
+    
+      .timeline-content .button {
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+      }
+    
+      .image-container {
+        width: 60%;
+        margin: 0 auto 1rem;
+        aspect-ratio: 4 / 3;
+        max-height: 9rem; /* Ajustado para consistência */
+      }
+    
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+
 
 
 
