@@ -152,7 +152,6 @@ main{
   height: 10rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  margin-bottom: 16rem;
   overflow: hidden;
   position: relative;
 }
@@ -185,7 +184,7 @@ main{
     gap: 8rem;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 8rem;
+    padding-top: 12rem;
 }
 
 #photo-second-main {
@@ -242,7 +241,7 @@ main{
 
 #third-main {
   margin: 14rem auto 0;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem  ;
   max-width: 1400px;
   background-color: var(--bg-dark);
   text-align: center;
@@ -251,6 +250,9 @@ main{
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
+
+
+
 
 .section-third-main h2 {
   font-size: clamp(1.8rem, 5vw, 2.2rem);
