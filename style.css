@@ -850,6 +850,12 @@ main{
         padding-left: 2.5rem;
         text-align: left;
       }
+
+      .timeline-item-left:nth-child(odd){
+        padding-right: 0px;
+      }
+
+
     
       .timeline-circle {
         left: 0.5rem;
