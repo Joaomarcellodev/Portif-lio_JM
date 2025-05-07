@@ -20,7 +20,14 @@ photo.addEventListener("click", () => {
 // Lógica para o menu responsivo do header
 
 document.querySelector('.menu-button').addEventListener('click', () => {
-    document.querySelector('.menu').classList.toggle('active');
+  document.querySelector('.menu').classList.toggle('active');
+});
+
+// Adiciona evento de clique para cada link dentro do menu
+document.querySelectorAll('header nav .menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.menu').classList.remove('active');
+  });
 });
 
 
