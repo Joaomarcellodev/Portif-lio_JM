@@ -667,13 +667,13 @@ main{
 
       #content h1{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
         white-space: nowrap;
       }
 
       #content p{
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
 
       .social{
@@ -682,7 +682,7 @@ main{
       }
 
       .social i{
-        font-size:2.5rem;
+        font-size:2.2rem;
       }
 
       #photo img {
@@ -743,6 +743,7 @@ main{
 
       #content-second-main h2 {
        text-align: center;
+       font-size: 1.6rem;
       }
 
       #content-second-main h3{
@@ -752,8 +753,8 @@ main{
       }
 
       #content-second-main p {
-        font-size: 1.2rem;
-        line-height: 1.4;
+        font-size: 1rem;
+        line-height: 1.5;
       }
 
 
