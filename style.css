@@ -497,6 +497,7 @@ main{
 .details p {
   margin-top: 0.8rem;
   line-height: 1.5rem;
+  text-align: justify;
 }
 
 .timeline-item:hover .timeline-content .details,
@@ -730,8 +731,10 @@ main{
 
       #second-main {
         flex-direction: column-reverse;
-        margin-top: 4rem;
         gap: 5rem;
+        padding: 0;
+        margin-top: 2rem;
+        padding: 2rem;
       }
 
       #photo-second-main img {
@@ -769,6 +772,11 @@ main{
        #third-main {
         margin: 8rem auto 0;
         padding: 1.5rem 0.5rem;
+      }
+
+      .card-image{
+        display: flex;
+        justify-content: center;
       }
     
       .section-third-main h2 {
@@ -902,6 +910,7 @@ main{
       .details p {
         font-size: 0.8rem;
         margin-top: 0.6rem;
+      
       }
     
       .timeline-content .icons-card {
