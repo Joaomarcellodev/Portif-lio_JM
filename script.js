@@ -77,10 +77,17 @@ if (window.innerWidth <= 768) {
 }
 
 // Reinicia o carrossel em caso de redimensionamento
+let resizeTimeout;
+
+
 window.addEventListener('resize', () => {
-  if (window.innerWidth <= 768) {
-    startCarousel();
-  }
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    if (window.innerWidth <= 758) {
+      startCarousel();
+    }
+  },200)
+ 
 });
 
 
