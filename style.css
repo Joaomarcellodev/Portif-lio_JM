@@ -281,7 +281,6 @@ main{
 .card {
   background-color: #1e1e1e;
   width: 26rem;
-  height: 30rem;
   display: flex;
   flex-direction: column;
   border-radius: 0.4rem;
