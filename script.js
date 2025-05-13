@@ -10,7 +10,7 @@ photo.addEventListener("click", () => {
   setTimeout(() => {
     photo.src = toggled
       ? "./images/photo_jm.jpeg"
-      : "./images/logo_joao_(320x320).png";
+      : "./images/logo_joao_icon-corrigido(320x320).png";
     photo.style.transform = "rotateY(0deg)";
     photo.style.opacity = "1";
     toggled = !toggled;
