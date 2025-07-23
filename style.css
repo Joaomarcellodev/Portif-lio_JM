@@ -505,6 +505,10 @@ main {
   font-size: 2rem;
 }
 
+.icons-card img{
+  margin-top: 0.3rem;
+}
+
 .timeline-content .button {
   display: inline-block;
   padding: 0.4rem 1.5rem;
