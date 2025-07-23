@@ -328,6 +328,7 @@ main {
   font-size: 3rem;
 }
 
+
 .card-actions {
   display: flex;
   justify-content: center;
@@ -503,10 +504,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   font-size: 2rem;
-}
-
-.icons-card img{
-  margin-top: 0.3rem;
 }
 
 .timeline-content .button {
@@ -802,8 +799,13 @@ main {
   }
 
   .icons-card {
-    font-size: 3rem;
+    font-size:3rem;
     gap: 0.6rem;
+  }
+
+  .icons-card img{
+    width: 20px;
+    height: 20px;
   }
 
   .card-actions {
@@ -906,6 +908,7 @@ main {
     max-width: 100%;
     justify-content: center;
   }
+
 
   .timeline-content .button {
     padding: 0.3rem 1rem;
