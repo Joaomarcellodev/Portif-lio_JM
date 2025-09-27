@@ -11,7 +11,7 @@ const experiences = [
     responsibilities:
       "Tira dúvidas de alunos, criação e resolução de projetos, grupos de estudos, resolução de exercícios.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Java", "PostgreSQL", "Git"],
-    image: "/programming-education-logo.jpg",
+    image: "./images/programe.jpeg",
   },
   {
     title: "DevJourney",
@@ -22,7 +22,7 @@ const experiences = [
     responsibilities:
       "Atuei como desenvolvedor front-end freelancer no projeto devJourney, uma plataforma educacional com integração de IA. Fui responsável pela criação de interfaces intuitivas e responsivas, utilizando React, JSF e JavaScript, com integração ao backend via REST APIs.",
     technologies: ["JavaScript", "Java", "Spring Boot", "GlassFish"],
-    image: "/ai-education-platform-logo.jpg",
+    image: "./images/DevJourney.jpeg",
   },
   {
     title: "Projeto Freelancer - Dominio Tec",
@@ -33,7 +33,7 @@ const experiences = [
     responsibilities:
       "Fui responsável por todo o desenvolvimento do projeto, desde a criação da interface do usuário até a estruturação dos componentes. Utilizei React e TypeScript para organizar a arquitetura da aplicação de forma escalável e segura.",
     technologies: ["React", "TypeScript", "CSS3", "Git", "Vercel"],
-    image: "/tech-company-logo.jpg",
+    image: "./images/DT_Logo_D.png",
   },
   {
     title: "Estagiário Desenvolvedor FullStack",
@@ -44,7 +44,7 @@ const experiences = [
     responsibilities:
       "Atuo na G-dev como estagiário de desenvolvimento fullstack, contribuindo em projetos variados alocados por meio da terceirização da empresa. Participo desde a construção de interfaces com React até o desenvolvimento de APIs e integrações com bancos de dados.",
     technologies: ["React", "Node.js", "TypeScript", "Git", "Spring Boot"],
-    image: "/software-development-company-logo.jpg",
+    image: "./images/gdev_society_logo.jpeg",
   },
   {
     title: "Projeto Open Source - Devs Piauí",
@@ -55,7 +55,7 @@ const experiences = [
     responsibilities:
       "Minhas responsabilidades no projeto Devs Piauí são focadas no desenvolvimento front-end, onde atuo na criação e melhoria das interfaces da plataforma. Utilizo tecnologias como React e Tailwind CSS para garantir que a experiência do usuário seja intuitiva, responsiva e acessível.",
     technologies: ["React", "Tailwind CSS", "TypeScript", "Git", "Vercel"],
-    image: "/developer-community-logo.jpg",
+    image: "./images/devspiaui.jpeg",
   },
 ]
 
