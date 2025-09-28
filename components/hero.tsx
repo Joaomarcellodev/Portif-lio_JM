@@ -61,8 +61,8 @@ export default function Hero() {
                 <img
                   src={
                     imageToggled
-                      ? "/placeholder.svg?height=320&width=320&query=professional developer logo"
-                      : "/placeholder.svg?height=320&width=320&query=professional developer portrait"
+                      ? "./images/logo_jm(320).png?height=320&width=320&query=professional developer logo"
+                      : "images/photo_jm.jpeg?height=320&width=320&query=professional developer portrait"
                   }
                   alt="João Marcello"
                   className="w-full h-full object-cover transition-all duration-600 group-hover:scale-105"

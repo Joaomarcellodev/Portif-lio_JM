@@ -8,7 +8,7 @@ export default function About() {
             <div className="relative">
               <div className="w-80 h-80 rounded-2xl overflow-hidden border border-border">
                 <img
-                  src="/professional-developer-working.png"
+                  src="./images/photo2.jpeg"
                   alt="João Marcello trabalhando"
                   className="w-full h-full object-cover"
                 />
