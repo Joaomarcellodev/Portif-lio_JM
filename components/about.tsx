@@ -26,7 +26,7 @@ export default function About() {
             </div>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
+              <p className="text-justify">
                 Fala galera, JM na área! Apaixonado por tecnologia e sempre em busca de soluções criativas para
                 problemas do dia a dia. Atualmente, estou cursando{" "}
                 <strong className="text-foreground">Ciência da Computação na UESPI</strong>, em Piripiri, e me
@@ -34,13 +34,13 @@ export default function About() {
                 <strong className="text-foreground">Programe.io</strong>.
               </p>
 
-              <p>
+              <p className="text-justify">
                 Além disso, também compartilho meu conhecimento criando conteúdo relacionado a programação, ajudando
                 outros a aprender e se desenvolver na área. Acredito que a tecnologia tem o poder de transformar ideias
                 em soluções reais, e é isso que me motiva a aprender constantemente.
               </p>
 
-              <p>
+              <p className="text-justify">
                 Me dedico a criar experiências digitais que fazem a diferença, sempre focando no progresso contínuo e na
                 excelência técnica.
               </p>

@@ -106,11 +106,11 @@ export default function Experience() {
                     </CardHeader>
 
                     <CardContent className="space-y-4">
-                      <p className="text-sm text-muted-foreground leading-relaxed">{experience.description}</p>
+                      <p className="text-sm text-justify text-muted-foreground leading-relaxed">{experience.description}</p>
 
                       <div>
                         <h4 className="font-medium text-sm mb-2">Responsabilidades:</h4>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{experience.responsibilities}</p>
+                        <p className="text-sm  text-muted-foreground leading-relaxed text-justify">{experience.responsibilities}</p>
                       </div>
 
                       <div>

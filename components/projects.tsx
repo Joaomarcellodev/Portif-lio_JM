@@ -87,7 +87,7 @@ export default function Projects() {
 
               <CardHeader>
                 <CardTitle className="text-lg group-hover:text-primary transition-colors">{project.title}</CardTitle>
-                <CardDescription className="text-sm leading-relaxed">{project.description}</CardDescription>
+                <CardDescription className="text-sm text-justify leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
 
               <CardContent>
