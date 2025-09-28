@@ -8,16 +8,16 @@ const projects = [
     title: "Phone Store - Loja de Celulares",
     description:
       "Phone Store é a landing page do meu primeiro projeto no desenvolvimento front-end! Neste projeto, utilizei HTML para estruturar a página e CSS para criar um design estiloso e funcional.",
-    image: "/phone-store-ecommerce-website.jpg",
+    image: "./images/phoneStore.png",
     technologies: ["HTML5", "CSS3"],
-    liveUrl: "https://joaomarcellodev.github.io/Phone-Store/",
+    liveUrl: "https://phone-store-umber.vercel.app/",
     githubUrl: "https://github.com/Joaomarcellodev/Phone-Store",
   },
   {
     title: "Agregador de Links - Linketree",
     description:
       'O Site Agregador de Links é um projeto básico inspirado no famoso "Linktree"! Com ele, você pode armazenar e exibir de forma prática os links dos seus projetos ou redes sociais.',
-    image: "/linktree-clone-website.jpg",
+    image: "./images/agregadorLinks.png",
     technologies: ["HTML5", "CSS3"],
     liveUrl: "https://joaomarcellodev.github.io/Agregador-de-links/",
     githubUrl: "https://github.com/Joaomarcellodev/Agregador-de-links",
@@ -26,7 +26,7 @@ const projects = [
     title: "Planet Pizza - PWA",
     description:
       "O Planet Pizza é um Progressive Web App (PWA) desenvolvido para servir como um cardápio digital para uma pizzaria, auxiliando em pedidos e melhorando atendimentos.",
-    image: "/pizza-restaurant-pwa-app.jpg",
+    image: "./images/planetPizza.png",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveUrl: "https://joaomarcellodev.github.io/Planet_Pizza/",
     githubUrl: "https://github.com/Joaomarcellodev/Planet_Pizza",
@@ -35,7 +35,7 @@ const projects = [
     title: "Relógio Digital",
     description:
       "O Relógio Digital é um projeto simples, porém muito útil, criado com as linguagens fundamentais da web: HTML, CSS e JavaScript. Ele tem como principal objetivo exibir a hora atual em tempo real.",
-    image: "/digital-clock-web-app.jpg",
+    image: "./images/relogioDigital.png",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveUrl: "https://joaomarcellodev.github.io/relogio_digital/",
     githubUrl: "https://github.com/Joaomarcellodev/relogio_digital/tree/main",
@@ -44,7 +44,7 @@ const projects = [
     title: "Gerador de Senha",
     description:
       "O Gerador de Senhas é um projeto básico desenvolvido com HTML, CSS, e JavaScript, onde exploramos as funcionalidades dessas tecnologias para criar um gerador de senhas interativo.",
-    image: "/password-generator-web-app.jpg",
+    image: "./images/geradorSenha.png",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveUrl: "https://joaomarcellodev.github.io/Gerador-de-senha/",
     githubUrl: "https://github.com/Joaomarcellodev/Gerador-de-senha",
@@ -53,7 +53,7 @@ const projects = [
     title: "Checkpoint Blog",
     description:
       "O Blog de Games é um projeto desenvolvido com Tailwind CSS, proporcionando uma interface moderna, responsiva e estilizada para conteúdos sobre o mundo dos jogos!",
-    image: "/gaming-blog-website.jpg",
+    image: "./images/checkpoint.png",
     technologies: ["HTML5", "Tailwind CSS"],
     liveUrl: "https://checkpoint-blogs.vercel.app/",
     githubUrl: "https://github.com/Joaomarcellodev/Checkpoint-Blog",
