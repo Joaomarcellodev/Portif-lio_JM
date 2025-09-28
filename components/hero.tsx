@@ -111,15 +111,6 @@ export default function Hero() {
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-
-                {/* Verso */}
-                <div className="absolute inset-0 backface-hidden rotate-y-180">
-                  <img
-                    src="/images/logo_jm(320).png?height=320&width=320&query=professional developer logo"
-                    alt="Logo JM"
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </div>
               </div>
 
               {/* Glow no hover */}
