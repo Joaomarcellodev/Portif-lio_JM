@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram } from "lucide-react"
+import { Github, Linkedin, Instagram, Youtube, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Footer() {
@@ -8,6 +8,9 @@ export default function Footer() {
     { icon: Github, href: "https://github.com/joaomarcellodev", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com/in/joaomarcellodev", label: "LinkedIn" },
     { icon: Instagram, href: "https://www.instagram.com/joaomarcello.dev", label: "Instagram" },
+    { icon: Youtube, href: "https://www.youtube.com/@joaomarcellodev", label: "YouTube" },
+    { icon: MessageCircle, href: "https://wa.me/86988109565?text=Meu%20WhatsApp%20", label: "WhatsApp" },
+
   ]
 
   const navLinks = [
