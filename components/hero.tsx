@@ -30,7 +30,7 @@ export default function Hero() {
     },
     {
       icon: MessageCircle,
-      href: "https://wa.me/86998090097?text=Meu%20WhatsApp%20",
+      href: "https://wa.me/86998090097?text=Fala JM, tudo beleza?",
       label: "WhatsApp",
     },
     {
